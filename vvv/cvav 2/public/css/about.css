@@ -1,0 +1,71 @@
+/* About Area */
+
+ul.about-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content li {
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-left {
+    flex-basis: 40%;
+    background-image: url('../../src/img/about-img.jpg');
+}
+
+.about-right {
+    flex-basis: 60%;
+}
+
+.about-area p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+}
+
+.about-right h1 {
+    margin-bottom: 3%;
+    color: #ff6633;
+}
+
+.about-btn {
+    padding: 15px 20px;
+    background-color: #339933;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.6s;
+}
+
+.about-btn:hover,
+.about-btn:focus {
+    background-color: #ff6633;
+}
+
+@media (max-width: 1000px) {
+    .about-left, .about-right {
+        flex-basis: 100%;
+    }
+
+    .about-left {
+        height: 300px;
+    }
+
+    .about-content li {
+        padding: 8px;
+    }
+
+    .about-btn {
+        padding: 10px 15px;
+    }
+}
+
+/* End About Area */

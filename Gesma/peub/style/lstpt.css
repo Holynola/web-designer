@@ -1,0 +1,458 @@
+body, div, header, h1, h2, p
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#option {
+	display: none;
+	cursor: pointer;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	background: #3592e0;
+	border: none;
+	color: white;
+}
+
+/* Menu */
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	margin-right: 50px;
+}
+
+ul li
+{
+	display: inline-block;
+	text-align: center;
+	border: 2px solid white;
+	
+}
+
+ul li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	background-color: orange;
+}
+
+ul li a:hover
+{
+	background-color: #3592e0;
+}
+
+ul li ul li
+{
+	display: none;
+}
+
+ul li:hover .sousmenu li
+{
+	display: block;
+}
+
+ul li .sousmenu
+{
+	margin-bottom: -30px;
+}
+
+ul li:hover .sousmenu
+{
+	margin-top: 1px;
+	margin-bottom: -110px;
+	position: relative;
+	margin-right: 0px;
+}
+
+/* Logo */
+.logo img
+{
+	width: 100px;
+	height: auto;
+	float: left;
+	margin-left: 50px;
+}
+
+/* Logo et Menu */
+header
+{
+	height: 100px;
+	background: #847165;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	margin: auto;
+}
+
+#content
+{
+	padding-top: 110px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	color : black;
+	font-family: sans-serif;
+}
+
+h2  {
+	font-size: 30px;
+	color: green;
+	font-family: sans-serif;
+	margin-left: 50px;
+}
+
+/* Tracer un trait */
+hr {
+	width: 80%;
+	float: left;
+	border: 5px solid orange;
+	margin-left: 20px;
+	border-radius: 20px;
+	box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+
+select {
+	border: none;
+   	color: white;
+   	background: #0563af;
+   	text-align: center;
+   	font-size: 20px;
+   	font-weight: bold;
+   	padding: 5px 10px;
+   	width: 200px;
+   	margin-left: 5px;
+   	box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+
+/* Article */
+.wrap
+{
+	clear: both;
+	width: 98%;
+
+}
+
+.wrap form
+{
+	width: 100%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.wrap form li
+{
+	display: inline;
+	text-decoration: none;
+	width: 32%;
+	float: left;
+	margin: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+	transition: 0.4s;
+	background-color: #fff;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+/* Information de la carte */
+.container
+{
+	padding: 2px 10px;
+}
+
+#selct1 {
+	width: 150px;
+}
+
+#selct2 {
+	margin-left: 45%;
+}
+
+#selct3 {
+	margin-left: 45%;
+	display: none;
+}
+
+#wrapannee {
+	display: none;
+}
+
+/* Smartphone en portrait */
+@media screen and (max-width: 479px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	#option {
+		display: inline-block;
+	}
+
+	ul {
+		display: none;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	ul li {
+		border: none;
+		margin-bottom: 5px;
+		width: 80%;
+	}
+
+	ul li a {
+		font-size: 20px;
+	}
+
+	ul li ul li
+	{
+		width: 100%;
+	}
+
+	ul li ul li a
+	{
+		background-color: black;
+		position: relative;
+	}
+
+	ul li ul a:hover {
+		background-color: #3592e0;
+	}
+
+	ul li:hover ul
+	{
+		width: 100%;
+		display: none;
+	}
+
+	#image {
+		display: block;
+		background: no-repeat center fixed;
+		background-size: 100%;
+	}
+
+	#content {
+		position: static;
+		width: 95%;
+	}
+
+	h1 {
+		font-size: 30px;
+		margin-top: -30px;
+	}
+
+	hr {
+		width: 100%;
+		margin-left: 2%;
+	}
+
+	select, #selct1 {
+	   	font-size: 15px;
+	   	padding: 5px 10px;
+	   	width: 40%;
+	}
+
+	.wrap form li
+	{
+		width: 95%;
+		font-size: 14px;
+	}
+
+	#selct1 {
+		margin-left: 30%;
+		margin-bottom: 10px;
+	}
+
+	#selct2 {
+		margin-left: 30%;
+		margin-bottom: 10px;
+	}
+
+	#selct3 {
+		margin-left: 30%;
+		margin-bottom: 10px;	
+	}
+}
+
+/* Smartphone en paysage, tablette en portrait et petite tablette en paysage */
+@media screen and (max-width: 949px) and (min-width: 480px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	#option {
+		display: inline-block;
+	}
+
+	ul {
+		display: none;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	ul li {
+		border: none;
+		margin-bottom: 5px;
+	}
+
+	ul li ul li
+	{
+		width: 100%;
+	}
+
+	ul li ul li a
+	{
+		background-color: black;
+		position: relative;
+	}
+
+	ul li ul a:hover {
+		background-color: #3592e0;
+	}
+
+	ul li:hover ul
+	{
+		width: 100%;
+		display: none;
+	}
+
+	#content {
+		position: static;
+		width: 96%;
+	}
+
+	h1 {
+		font-size: 40px;
+		margin-top: -30px;
+	}
+
+	hr {
+		width: 100%;
+		margin-left: 2%;
+	}
+
+	select, #selct1 {
+	   	font-size: 17px;
+	   	padding: 5px 10px;
+	   	width: 40%;
+	}
+
+	.wrap, .wrap table {
+		margin: 0 auto;
+	}
+
+	.wrap form li
+	{
+		width: 100%;
+		font-size: 18px;
+	}
+
+	#selct1 {
+		margin-left: 30%;
+		margin-bottom: 10px;
+	}
+
+	#selct2 {
+		margin-left: 30%;
+		margin-bottom: 10px;
+	}
+
+	#selct3 {
+		margin-left: 30%;
+		margin-bottom: 10px;	
+	}
+}
+
+/* Tablette en paysage, écran d’ordinateur de taille petite et moyenne */
+@media screen and (max-width: 1175px) and (min-width: 950px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	ul {
+		margin-top: 0px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#content {
+		position: static;
+	}
+
+	h1 {
+		font-size: 45px;
+		margin-top: -30px;
+	}
+
+	hr {
+		width: 75%;
+		margin-left: 2%;
+	}
+
+	select, #selct1 {
+	   	font-size: 17px;
+	   	padding: 5px 10px;
+	   	width: 40%;
+	}
+
+	.wrap form li
+	{
+		width: 30%;
+		font-size: 16px;
+	}
+
+	#selct1 {
+		width: 20%;
+	}
+
+	#selct2 {
+		width: 20%;
+		margin-left: 40%;
+		margin-bottom: 10px;
+	}
+
+	#selct3 {
+		width: 20%;
+		margin-left: 40%;
+		margin-bottom: 10px;	
+	}
+}

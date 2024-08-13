@@ -1,0 +1,326 @@
+body, div, header, h1, h2, p
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+#option {
+	display: none;
+	cursor: pointer;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	background: #3592e0;
+	border: none;
+	color: white;
+}
+
+/* Menu */
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	margin-right: 50px;
+}
+
+ul li
+{
+	display: inline-block;
+	text-align: center;
+	border: 2px solid white;
+}
+
+ul li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	background-color: orange;
+}
+
+ul li a:hover
+{
+	background-color: #3592e0;
+}
+
+ul li ul li
+{
+	display: none;
+}
+
+ul li:hover .sousmenu li
+{
+	display: block;
+}
+
+ul li .sousmenu
+{
+	margin-bottom: -30px;
+}
+
+ul li:hover .sousmenu
+{
+	margin-top: 1px;
+	margin-bottom: -110px;
+	position: relative;
+	margin-right: 0px;
+}
+
+/* Logo */
+.logo img
+{
+	width: 100px;
+	height: auto;
+	float: left;
+	margin-left: 50px;
+}
+
+/* Logo et Menu */
+header
+{
+	height: 100px;
+	background: #847165;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	margin: auto;
+}
+
+#histo {
+	padding-top: 120px;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+#content {
+	margin-left: 5%;
+	margin-right: 10%;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+/* Tracer un trait */
+hr {
+	width: 100%;
+	float: left;
+	border: 5px solid orange;
+	border-radius: 20px;
+	box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+
+table td {
+	width: 20%;
+	padding-right: 0px;
+}
+
+#titr {
+	color: red;
+}
+
+#titre {
+	color: #0285A8;
+}
+
+/* Smartphone en portrait */
+@media screen and (max-width: 500px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	#option {
+		display: inline-block;
+	}
+
+	ul {
+		display: none;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	ul li {
+		border: none;
+		margin-bottom: 5px;
+		width: 80%;
+	}
+
+	ul li a {
+		font-size: 20px;
+	}
+
+	ul li ul li
+	{
+		width: 100%;
+	}
+
+	ul li ul li a
+	{
+		background-color: black;
+		position: relative;
+	}
+
+	ul li ul a:hover {
+		background-color: #3592e0;
+	}
+
+	ul li:hover ul
+	{
+		width: 100%;
+		display: none;
+	}
+
+	#histo {
+		padding-top: 50px;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	#content {
+		font-size: 22px;
+		margin-left: 10px;
+	}
+
+	table td {
+		padding-right: 0px;
+	}
+
+	table tr td {
+		width: 100%;
+		display: block;
+	}
+
+}
+
+/* Smartphone en paysage, tablette en portrait et petite tablette en paysage */
+@media screen and (max-width: 800px) and (min-width: 501px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	#option {
+		display: inline-block;
+	}
+
+	ul {
+		display: none;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	ul li {
+		border: none;
+		margin-bottom: 5px;
+	}
+
+	ul li ul li
+	{
+		width: 100%;
+	}
+
+	ul li ul li a
+	{
+		background-color: black;
+		position: relative;
+	}
+
+	ul li ul a:hover {
+		background-color: #3592e0;
+	}
+
+	ul li:hover ul
+	{
+		width: 100%;
+		display: none;
+	}
+	
+	#histo {
+		padding-top: 50px;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+
+	#content {
+		font-size: 25px;
+		margin-left: 20px;
+	}
+
+	table td {
+		padding-right: 0px;
+	}
+
+	table tr td {
+		width: 100%;
+		display: block;
+	}	
+}
+
+
+
+/* Tablette en paysage, écran d’ordinateur de taille petite et moyenne */
+@media screen and (max-width: 1175px) and (min-width: 801px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	ul {
+		margin-top: 0px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#histo {
+		padding-top: 50px;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+
+	#content {
+		margin-left: 20px;
+	}
+
+	table td {
+		width: 25%;
+		padding-right: 10px;
+	}	
+}	

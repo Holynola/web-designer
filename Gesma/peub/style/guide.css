@@ -1,0 +1,404 @@
+body {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: sans-serif;
+	text-align: justify;
+}
+
+.wel {
+	text-align: center;
+	font-size: 30px;
+}
+
+#som {
+	font-size: 35px;
+}
+
+#tit {
+	font-size: 25px;
+	list-style-position: inside;
+}
+
+span {
+	color: red;
+	font-weight: bold;
+}
+
+.sty {
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: -5px;
+	margin-left: 5%;
+}
+
+/* S'identifier */
+#iden {
+	width: 100%;
+	height: 600px;
+	background: url(../cap/ecran/iden.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Accueil */
+#acc {
+	width: 100%;
+	height: 545px;
+	background: url(../cap/ecran/acc.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Boissons*/
+#boi {
+	width: 100%;
+	height: 400px;
+	background: url(../cap/ecran/boi.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+#aboi {
+	width: 100%;
+	height: 580px;
+	background: url(../cap/ecran/aboi.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+#bois {
+	width: 100%;
+	height: 480px;
+	background: url(../cap/ecran/bois.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Commandes */
+
+/* Nouvelle commande */
+#ncom {
+	width: 100%;
+	height: 430px;
+	background: url(../cap/ecran/ncom.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Liste des commandes */
+#lcom {
+	width: 100%;
+	height: 460px;
+	background: url(../cap/ecran/lcom.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Liste des commandes (Par Fournisseur) */
+#fcom {
+	width: 100%;
+	height: 450px;
+	background: url(../cap/ecran/fcom.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Fournisseurs */
+#four {
+	width: 100%;
+	height: 395px;
+	background: url(../cap/ecran/four.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+#fours {
+	width: 100%;
+	height: 470px;
+	background: url(../cap/ecran/fours.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+#fourse {
+	width: 100%;
+	height: 460px;
+	background: url(../cap/ecran/fourse.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Stocks */
+#stock {
+	width: 100%;
+	height: 590px;
+	background: url(../cap/ecran/stock.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Espace Conso */
+#esp {
+	width: 100%;
+	height: 541px;
+	background: url(../cap/ecran/esp.png) no-repeat center;
+}
+
+#espa {
+	width: 100%;
+	height: 395px;
+	background: url(../cap/ecran/espa.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Points */
+#point {
+	width: 100%;
+	height: 585px;
+	background: url(../cap/ecran/point.png) no-repeat center;
+	margin-bottom: 10px;
+}
+
+/* Smartphone en portrait */
+@media screen and (max-width: 479px){
+	body {
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	#wel {
+		font-size: 20px;
+	}
+
+	#som {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	#cont {
+		font-size: 15px;
+	}
+
+	#tit {
+		font-size: 18px;
+		list-style-position: initial;
+	}
+
+	/* S'identifier */
+	#iden {
+		height: 600px;
+		background: url(../cap/phe/iden.png) no-repeat center;
+	}
+
+	/* Accueil */
+	#acc {
+		height: 580px;
+		background: url(../cap/phe/acc.png) no-repeat center;
+	}
+
+	/* Boissons*/
+	#boi {
+		height: 637px;
+		background: url(../cap/phe/boi.png) no-repeat center;
+	}
+
+	#aboi {
+		height: 600px;
+		background: url(../cap/phe/aboi.png) no-repeat center;
+	}
+
+	#bois {
+		height: 620px;
+		background: url(../cap/phe/bois.png) no-repeat center;
+	}
+
+	/* Commandes */
+
+	/* Nouvelle commande */
+	#ncom {
+		height: 575px;
+		background: url(../cap/phe/ncom.png) no-repeat center;
+	}
+
+	/* Liste des commandes */
+	#lcom {
+		height: 630px;
+		background: url(../cap/phe/lcom.png) no-repeat center;
+	}
+
+	/* Liste des commandes (Par Fournisseur) */
+	#fcom {
+		height: 505px;
+		background: url(../cap/phe/fcom.png) no-repeat center;
+	}
+
+	/* Fournisseurs */
+	#four {
+		height: 640px;
+		background: url(../cap/phe/four.png) no-repeat center;
+	}
+
+	#fours {
+		height: 560px;
+		background: url(../cap/phe/fours.png) no-repeat center;
+	}
+
+	#fourse {
+		height: 640px;
+		background: url(../cap/phe/fourse.png) no-repeat center;
+	}
+
+	/* Stocks */
+	#stock {
+		height: 540px;
+		background: url(../cap/phe/stock.png) no-repeat center;
+	}
+
+	/* Espace Conso */
+	#esp {
+		height: 524px;
+		background: url(../cap/phe/esp.png) no-repeat center;
+	}
+
+	#espa {
+		height: 623px;
+		background: url(../cap/phe/espa.png) no-repeat center;
+		margin-bottom: 0px;
+	}
+
+	#espac {
+		width: 100%;
+		height: 350px;
+		background: url(../cap/phe/espac.png) no-repeat center;
+		margin-bottom: 0px;
+	}
+
+	#espace {
+		width: 100%;
+		height: 475px;
+		background: url(../cap/phe/espace.png) no-repeat center;
+		margin-bottom: 10px;
+	}
+
+	#point {
+		height: 620px;
+		background: url(../cap/phe/point.png) no-repeat center;
+	}
+
+}
+
+/* Smartphone en paysage, tablette en portrait et petite tablette en paysage */
+@media screen and (max-width: 949px) and (min-width: 480px){
+	body {
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	#wel {
+		font-size: 25px;
+	}
+
+	#som {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	#cont {
+		font-size: 20px;
+	}
+
+	#tit {
+		font-size: 20px;
+		list-style-position: initial;
+	}
+
+	/* S'identifier */
+	#iden {
+		height: 520px;
+		background: url(../cap/tab/iden.png) no-repeat center;
+	}
+
+	/* Accueil */
+	#acc {
+		height: 560px;
+		background: url(../cap/tab/acc.png) no-repeat center;
+	}
+
+	/* Boissons*/
+	#boi {
+		height: 565px;
+		background: url(../cap/tab/boi.png) no-repeat center;
+	}
+
+	#aboi {
+		height: 500px;
+		background: url(../cap/tab/aboi.png) no-repeat center;
+	}
+
+	#bois {
+		height: 585px;
+		background: url(../cap/tab/bois.png) no-repeat center;
+	}
+
+	/* Commandes */
+
+	/* Nouvelle commande */
+	#ncom {
+		height: 330px;
+		background: url(../cap/tab/ncom.png) no-repeat center;
+	}
+
+	/* Liste des commandes */
+	#lcom {
+		height: 545px;
+		background: url(../cap/tab/lcom.png) no-repeat center;
+	}
+
+	/* Liste des commandes (Par Fournisseur) */
+	#fcom {
+		height: 385px;
+		background: url(../cap/tab/fcom.png) no-repeat center;
+	}
+
+	/* Fournisseurs */
+	#four {
+		height: 495px;
+		background: url(../cap/tab/four.png) no-repeat center;
+	}
+
+	#fours {
+		height: 490px;
+		background: url(../cap/tab/fours.png) no-repeat center;
+	}
+
+	#fourse {
+		height: 430px;
+		background: url(../cap/tab/fourse.png) no-repeat center;
+	}
+
+	/* Stocks */
+	#stock {
+		height: 480px;
+		background: url(../cap/tab/stock.png) no-repeat center;
+	}
+
+	/* Espace Conso */
+	#esp {
+		height: 460px;
+		background: url(../cap/tab/esp.png) no-repeat left;
+	}
+
+	#espa {
+		height: 430px;
+		background: url(../cap/tab/espa.png) no-repeat left;
+		margin-bottom: 0px;
+	}
+
+	/* Points */
+	#point {
+		height: 480px;
+		background: url(../cap/tab/point.png) no-repeat center;
+	}
+}
+
+/* Tablette en paysage, écran d’ordinateur de taille petite et moyenne */
+@media screen and (max-width: 1175px) and (min-width: 950px){
+
+}

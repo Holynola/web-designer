@@ -1,0 +1,52 @@
+body {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: sans-serif;
+	text-align: justify;
+}
+
+.wel {
+	text-align: center;
+	font-size: 30px;
+}
+
+.sty {
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 5%;
+}
+
+span {
+	color: red;
+	font-weight: bold;
+}
+
+b {
+	color: blue;
+}
+
+/* Smartphone en portrait */
+@media screen and (max-width: 479px){
+	body {
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+}
+
+/* Smartphone en paysage, tablette en portrait et petite tablette en paysage */
+@media screen and (max-width: 949px) and (min-width: 480px){
+	body {
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+}

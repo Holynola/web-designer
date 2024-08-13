@@ -1,0 +1,210 @@
+body {
+	font-family: sans-serif;
+}
+
+button {
+	display: none;
+}
+
+ul {
+	display: none;
+}
+
+.logo img {
+	display: none;
+}
+
+header {
+	display: none;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	font-family: sans-serif;
+}
+
+.cmdBox
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 500px;
+	box-sizing: border-box;
+}
+
+#idTable
+{
+	border-collapse: collapse;
+	width: 100%;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+#idTable th
+{
+	background-color: #1ABF4C;
+	color: white;
+	border: 1px solid white;
+}
+
+#idTable td
+{
+	border: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+
+#idTable input {
+	width: 50px;
+	background: transparent;
+	text-align: center;
+	padding-left: 10px;
+	color: black;
+	border: none;
+	font-weight: bold;
+}
+
+#idTable input[type="text"] {
+	padding-left: 0px;
+	width: 105px;
+}
+
+#total input {
+	color: white;
+}
+
+textarea {
+  resize: none;
+  font-weight: bold;
+  color: red;
+  border: 1px solid black;
+}
+
+#autre {
+	width: 98%;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+#autre #one {
+	float: left;
+}
+
+#autre #two {
+	float: left;
+}
+
+#autre #three {
+	float: left;
+}
+
+#autre input[type="number"] {
+	text-align: center;
+	border: 1px solid black;
+	width: 100px;
+	color: red;
+	font-weight: bold;
+}
+
+#autre tr td:nth-child(1), #autre tr td:nth-child(3), #autre tr td:nth-child(5) {
+	text-align: right;
+}
+
+#autre #three tr td:nth-child(4) {
+	clear: both;
+}
+
+#bef {
+	clear: both;
+	width: 100%;
+	height: 5px;
+}
+
+#recap {
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-weight: bold;
+	float: right;
+}
+
+#recap td {
+	border: 1px solid black;
+}
+
+#recap th {
+	border: 1px solid black;
+	background: #B70D71;
+	color: white;
+}
+
+#recap input {
+	width: 100px;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#stck {
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	float: right;
+}
+
+#stck td {
+	border: 1px solid black;
+}
+
+#stck input {
+	width: 100px;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#stck th {
+	border: 1px solid black;
+	background: #B70D71;
+	color: white;
+}
+
+#pers {
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+#pers td {
+	border: 1px solid black;
+}
+
+#pers th {
+	border: 1px solid black;
+	background: #B70D71;
+	color: white;
+}
+
+#pers input, #pers select {
+	width: 100px;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#imp {
+	display: none;
+}

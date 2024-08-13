@@ -1,0 +1,718 @@
+body, div, header, h1, h2, p
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#option {
+	display: none;
+	cursor: pointer;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	background: #3592e0;
+	border: none;
+	color: white;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+/* Menu */
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	margin-right: 50px;
+}
+
+ul li
+{
+	display: inline-block;
+	text-align: center;
+	border: 2px solid white;
+	
+}
+
+ul li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	background-color: orange;
+}
+
+ul li a:hover
+{
+	background-color: #3592e0;
+}
+
+ul li ul li
+{
+	display: none;
+}
+
+ul li:hover .sousmenu li
+{
+	display: block;
+}
+
+ul li .sousmenu
+{
+	margin-bottom: -30px;
+}
+
+ul li:hover .sousmenu
+{
+	margin-top: 1px;
+	margin-bottom: -110px;
+	position: relative;
+	margin-right: 0px;
+}
+
+/* Logo */
+.logo img
+{
+	width: 100px;
+	height: auto;
+	float: left;
+	margin-left: 50px;
+}
+
+/* Logo et Menu */
+header
+{
+	height: 100px;
+	background: #847165;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	margin: auto;
+}
+
+#content
+{
+	padding-top: 110px;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 50px;
+	color: black;
+	font-family: sans-serif;
+}
+
+.cmdBox
+{
+	position: absolute;
+	margin-top: 90px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 500px;
+	box-sizing: border-box;
+}
+
+#table-box {
+	width: 100%;
+	overflow-x: scroll;
+}
+
+#table-box #idTable tr th:nth-child(1) {
+	position: sticky;
+	left: 0;
+	background: #1ABF4C;
+}
+
+#table-box #idTable tr td:nth-child(1) {
+	position: sticky;
+	left: 0;
+	color: white;
+	padding-left: 10px;
+	background-color: #1ABF4C;
+	border: 1px solid white;
+}
+
+#table-box #idTable tr td:nth-child(1) input {
+	color: white;
+}
+
+#idTable
+{
+	width: 100%;
+	margin-top: 20px;
+	border-collapse: collapse;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#idTable th
+{
+	background-color: #1ABF4C;
+	color: white;
+	font-size: 12px;
+	border: 1px solid white;
+}
+
+#idTable td
+{
+	border: 1px solid black;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+textarea {
+  resize: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  font-family: sans-serif;
+  border: 1px solid black;
+}
+
+#autre {
+	width: 98%;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#autre #one {
+	float: left;
+}
+
+#autre #two {
+	float: left;
+}
+
+#autre #three {
+	float: left;
+}
+
+#autre input[type="number"] {
+	text-align: center;
+	border: 1px solid black;
+	width: 100px;
+	color: red;
+	font-size: 14px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#autre tr td:nth-child(1), #autre tr td:nth-child(3), #autre tr td:nth-child(5) {
+	text-align: right;
+}
+
+#autre #three tr td:nth-child(4) {
+	clear: both;
+}
+
+#bef {
+	clear: both;
+	width: 100%;
+	height: 5px;
+}
+
+#recap {
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-weight: bold;
+	float: right;
+}
+
+#recap td {
+	border: 1px solid black;
+}
+
+#recap th {
+	border: 1px solid black;
+	background: #B70D71;
+	color: white;
+}
+
+#stck {
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 25px;
+	font-weight: bold;
+	float: right;
+}
+
+#stck td {
+	border: 1px solid black;
+}
+
+#stck th {
+	border: 1px solid black;
+	background: #B70D71;
+	color: white;
+}
+
+#pers {
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+#pers td {
+	border: 1px solid black;
+}
+
+#pers th {
+	border: 1px solid black;
+	background: #B70D71;
+	color: white;
+}
+
+#imp {
+	clear: both;
+	text-align: center;
+}
+
+#imp button {
+	border: none;
+	outline: none;
+	height: 40px;
+	border-radius: 20px;
+	width: 200px;
+	color: white;
+	font-size: 16px;
+	background: #1ABF4C;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+#imp button:hover {
+	background: yellow;
+	color: black;
+}
+
+/* Smartphone en portrait */
+@media screen and (max-width: 479px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	#option {
+		display: inline-block;
+	}
+
+	ul {
+		display: none;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	ul li {
+		border: none;
+		margin-bottom: 5px;
+		width: 80%;
+	}
+
+	ul li a {
+		font-size: 20px;
+	}
+
+	ul li ul li
+	{
+		width: 100%;
+	}
+
+	ul li ul li a
+	{
+		background-color: black;
+		position: relative;
+	}
+
+	ul li ul a:hover {
+		background-color: #3592e0;
+	}
+
+	ul li:hover ul
+	{
+		width: 100%;
+		display: none;
+	}
+
+	#image {
+		display: block;
+		background: no-repeat center fixed;
+		background-size: 100%;
+	}
+
+	#content {
+		position: static;
+		width: 100%;
+	}
+
+	h1
+	{
+		font-size: 30px;
+		margin-top: -70px;
+	}
+
+	.cmdBox
+	{
+		width: 100%;
+		position: relative;
+		top: 0%;
+		left: 0%;
+		margin-top: 10px;
+		transform: translate(-1%, -1%);
+		box-sizing: border-box;
+	}
+
+	#table-box #idTable, #idTable th, #idTable td {
+		border: 1px solid #000;
+		border-collapse: collapse;
+	}
+
+	#table-box {
+		width: 100%;
+		overflow-x: scroll;
+	}
+
+	#table-box #idTable tr th:nth-child(1) {
+		position: sticky;
+		left: 0;
+		background: #0563af;
+	}
+
+	#table-box #idTable tr td:nth-child(1) {
+		position: sticky;
+		left: 0;
+		background: #0563af;
+		padding-left: 5px;
+	}
+
+	#table-box #idTable tr td:nth-child(1) input {
+		color: white;
+	}
+
+	#autre {
+		margin-left: 5px;
+		width: 95%;
+	}
+
+	#autre table textarea {
+		width: 200px;
+	}
+
+	#autre #one td {
+		padding-left: 3px;
+	}
+
+	#autre #two td {
+		padding-left: 13px;
+	}
+
+	#autre #three td {
+		padding-left: 15px;
+	}
+
+	#xender {
+		width: 90px;
+		cursor: pointer;
+		margin-left: 40%;
+		margin-top: 0px;
+		border-radius: 30px;
+	}
+
+	#xender #save {
+		text-align: center;
+		font-size: 14px;
+		color: white;
+		cursor: pointer;
+		margin-left: 10px;
+	}
+
+	#recap, #stck, #pers {
+		margin-left: 2%;
+		margin-right: 0px;
+	}
+
+	#pers {
+		padding-top: 20px;
+	}
+
+	#pnt {
+		margin-top: 0px;
+	}
+}
+
+/* Smartphone en paysage, tablette en portrait et petite tablette en paysage */
+@media screen and (max-width: 949px) and (min-width: 480px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	#option {
+		display: inline-block;
+	}
+
+	ul {
+		display: none;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	ul li {
+		border: none;
+		margin-bottom: 5px;
+	}
+
+	ul li ul li
+	{
+		width: 100%;
+	}
+
+	ul li ul li a
+	{
+		background-color: black;
+		position: relative;
+	}
+
+	ul li ul a:hover {
+		background-color: #3592e0;
+	}
+
+	ul li:hover ul
+	{
+		width: 100%;
+		display: none;
+	}
+
+	#content {
+		position: static;
+	}
+
+	h1
+	{
+		font-size: 40px;
+		margin-top: -70px;
+	}
+
+	.cmdBox
+	{
+		width: 100%;
+		position: relative;
+		top: 0%;
+		left: 0%;
+		margin-top: 10px;
+		transform: translate(-1%, -1%);
+		box-sizing: border-box;
+	}
+
+	#table-box #idTable, #idTable th, #idTable td {
+		border: 1px solid #000;
+		border-collapse: collapse;
+	}
+
+	#table-box {
+		width: 100%;
+		overflow-x: scroll;
+	}
+
+	#table-box #idTable tr th:nth-child(1) {
+		position: sticky;
+		left: 0;
+		background: #0563af;
+	}
+
+	#table-box #idTable tr td:nth-child(1) {
+		position: sticky;
+		left: 0;
+		background: #0563af;
+		padding-left: 5px;
+	}
+
+	#table-box #idTable tr td:nth-child(1) input {
+		color: white;
+	}
+
+	#autre {
+		margin-left: 40px;
+		width: 95%;
+	}
+
+	#autre #one td {
+		padding-left: 3px;
+	}
+
+	#autre #two td {
+		padding-left: 13px;
+	}
+
+	#autre #three td {
+		padding-left: 15px;
+	}
+
+	#autre table textarea {
+		width: 200px;
+	}
+
+	#xender {
+		width: 90px;
+		cursor: pointer;
+		margin-left: 40%;
+		margin-top: 0px;
+		border-radius: 30px;
+	}
+
+	#xender #save {
+		text-align: center;
+		font-size: 14px;
+		color: white;
+		cursor: pointer;
+		margin-left: 10px;
+	}
+
+	#recap, #stck, #pers {
+		margin-left: 2%;
+		margin-right: 0px;
+	}
+
+	#pers {
+		padding-top: 20px;
+	}
+
+	#pnt {
+		margin-top: 10px;
+	}
+}
+
+/* Tablette en paysage, écran d’ordinateur de taille petite et moyenne */
+@media screen and (max-width: 1175px) and (min-width: 950px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	ul {
+		margin-top: 0px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#content {
+		position: static;
+	}
+
+	h1
+	{
+		font-size: 45px;
+		margin-top: -70px;
+	}
+
+	.cmdBox
+	{
+		width: 100%;
+		position: relative;
+		top: 0%;
+		left: 0%;
+		margin-top: 10px;
+		transform: translate(-1%, -1%);
+		box-sizing: border-box;
+	}
+
+	#table-box #idTable, #idTable th, #idTable td {
+		border: 1px solid #000;
+		border-collapse: collapse;
+	}
+
+	#table-box {
+		width: 100%;
+		overflow-x: scroll;
+	}
+
+	#table-box #idTable tr th:nth-child(1) {
+		position: sticky;
+		left: 0;
+		background: #0563af;
+	}
+
+	#table-box #idTable tr td:nth-child(1) {
+		position: sticky;
+		left: 0;
+		background: #0563af;
+		padding-left: 10px;
+	}
+
+	#table-box #idTable tr td:nth-child(1) input {
+		color: white;
+	}
+
+	#autre {
+		margin-left: 200px;
+		width: 500px;
+	}
+
+	#autre #one td {
+		padding-left: 3px;
+	}
+
+	#autre #two td {
+		padding-left: 13px;
+	}
+
+	#autre #three td {
+		padding-left: 15px;
+	}
+
+	#autre table textarea {
+		width: 300px;
+	}
+}
+
+/* Autres */
+@media screen and (max-width: 1250px) and (min-width: 1176px){
+	#autre {
+		width: 95%;
+	}
+	
+	#autre textarea {
+		width: 220px;
+	}
+}

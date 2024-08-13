@@ -1,0 +1,399 @@
+body, div, header, h1, h2, p
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#option {
+	display: none;
+	cursor: pointer;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	background: #3592e0;
+	border: none;
+	color: white;
+}
+
+/* Menu */
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	margin-right: 50px;
+}
+
+ul li
+{
+	display: inline-block;
+	text-align: center;
+	border: 2px solid white;
+}
+
+ul li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	display: block;
+	background-color: orange;
+}
+
+ul li a:hover
+{
+	background-color: #3592e0;
+}
+
+ul li ul li
+{
+	display: none;
+}
+
+ul li:hover .sousmenu li
+{
+	display: block;
+}
+
+ul li .sousmenu
+{
+	margin-bottom: -30px;
+}
+
+ul li:hover .sousmenu
+{
+	margin-top: 1px;
+	margin-bottom: -110px;
+	position: relative;
+	margin-right: 0px;
+}
+
+/* Logo */
+.logo img
+{
+	width: 100px;
+	height: auto;
+	float: left;
+	margin-left: 50px;
+}
+
+/* Logo et Menu */
+header
+{
+	height: 100px;
+	background: #847165;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	margin: auto;
+}
+
+#content
+{
+	padding-top: 110px;
+}
+
+h1
+{
+	font-size: 50px;
+	text-align: center;
+	color : black;
+	font-family: sans-serif;
+}
+
+.wrap
+{
+	clear: both;
+	width: 100%;
+	margin: auto;
+}
+
+.wrap form
+{
+	width: 100%;
+}
+
+.wrap form li
+{
+	display: inline;
+	text-decoration: none;
+	width: 240px;
+	height: 260px;
+	float: left;
+	margin: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+	transition: 0.4s;
+	background-color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+/* Carte */
+.card
+{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+	transition: 0.4s;
+	width: 240px;
+	height: 260px;
+	background-color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-family: sans-serif;
+	float: left;
+	margin: 10px;
+}
+
+.card form
+{
+	width: 100%;
+}
+
+.card form li
+{
+	list-style: none;
+}
+
+.card:hover
+{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+/* Information de la carte */
+.container
+{
+	padding: 2px 16px;
+}
+
+/* Smartphone en portrait */
+@media screen and (max-width: 479px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	#option {
+		display: inline-block;
+	}
+
+	ul {
+		display: none;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	ul li {
+		border: none;
+		margin-bottom: 5px;
+		width: 80%;
+	}
+
+	ul li a {
+		font-size: 20px;
+	}
+
+	ul li ul li
+	{
+		width: 100%;
+	}
+
+	ul li ul li a
+	{
+		background-color: black;
+		position: relative;
+	}
+
+	ul li ul a:hover {
+		background-color: #3592e0;
+	}
+
+	ul li:hover ul
+	{
+		width: 100%;
+		display: none;
+	}
+	
+	h1
+	{
+		font-size: 30px;
+		text-align: center;
+	}
+
+	#content {
+		padding-top: 50px;
+	}
+	
+}
+
+/* Smartphone en paysage, tablette en portrait et petite tablette en paysage */
+@media screen and (max-width: 949px) and (min-width: 480px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	#option {
+		display: inline-block;
+	}
+
+	ul {
+		display: none;
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+
+	ul li {
+		border: none;
+		margin-bottom: 5px;
+	}
+
+	ul li ul li
+	{
+		width: 100%;
+	}
+
+	ul li ul li a
+	{
+		background-color: black;
+		position: relative;
+	}
+
+	ul li ul a:hover {
+		background-color: #3592e0;
+	}
+
+	ul li:hover ul
+	{
+		width: 100%;
+		display: none;
+	}
+
+	h1
+	{
+		font-size: 40px;
+		text-align: center;
+	}
+
+	#content {
+		padding-top: 50px;
+	}
+}
+
+/* Tablette en paysage, écran d’ordinateur de taille petite et moyenne */
+@media screen and (max-width: 1175px) and (min-width: 950px){
+	header {
+		text-align: center;
+		position: relative;
+		box-shadow: none;
+		z-index: 0;
+		width: 100%;
+	}
+
+	.logo img {
+		float: none;
+		margin: 0;
+	}
+
+	ul {
+		margin-top: 0px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	h1
+	{
+		font-size: 45px;
+		text-align: center;
+	}
+
+	#content {
+		padding-top: 50px;
+	}
+	
+}
+
+/* Card */
+@media screen and (max-width: 500px) {
+	.wrap form li {
+		margin: 10px;
+		width: 95%;
+		height: 200px;
+	}
+
+	.card {
+		margin: 10px;
+		width: 95%;
+		height: 200px;
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 670px) {
+	.wrap form li {
+		margin: 10px;
+		width: 45%;
+		height: 200px;
+		font-size: 16px;
+	}
+
+	.card {
+		margin: 10px;
+		width: 45%;
+		height: 200px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 671px) and (max-width: 1000px) {
+	.wrap form li {
+		margin: 10px;
+		width: 30%;
+		height: 200px;
+		font-size: 16px;
+	}
+
+	.card {
+		margin: 10px;
+		width: 30%;
+		height: 200px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+	.wrap form li {
+		margin: 10px;
+		width: 22%;
+		height: 200px;
+		font-size: 16px;
+	}
+
+	.card {
+		margin: 10px;
+		width: 22%;
+		height: 200px;
+		font-size: 14px;
+	}
+}
+

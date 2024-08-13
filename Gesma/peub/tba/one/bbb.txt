@@ -1,0 +1,3 @@
+SELECT lala FROM latable WHERE id = (SELECT MAX(id) FROM latable)
+
+<button id="delet"><a href="delCmd.php?days=<?=$day?>&amp;hour=<?=$heure?>">Supprimer la commande</a></button>
